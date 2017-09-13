@@ -64,7 +64,7 @@ def forward_RC():
 thread.start_new_thread(forward_RC,())
 
 cap = cv2.VideoCapture(0)                            
-face_cascade = cv2.CascadeClassifier('/Users/Anand/Desktop/UAV/face_tracker/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 img, frame = cap.read()
 
 height, width, channels = img.shape
